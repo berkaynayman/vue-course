@@ -7,7 +7,7 @@
             <input v-bind:value="value" 
                    v-on:input="input" />
             {{ value }}
-            <h4>{{ error }}</h4>
+            <h4> {{ error }}</h4>
         </div>
     </div>
 </template>
@@ -21,8 +21,8 @@
                 value: "user"
             }
         },
-        computed:{
-            error(){
+        computed: {
+            error () {
                 if (this.value.length < 5 ) {
                     return "Kelime uzunluğu 5 den küçük."
                 }
